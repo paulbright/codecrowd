@@ -1,0 +1,166 @@
+Develop code that makes use of polymorphism; develop code that overrides methods;  differentiate between the type of a reference and the type of an object
+
+9
+
+Declare, instantiate, initialize and use multi-dimensional arrays
+
+8
+
+Use abstract classes and interfaces
+
+8
+
+Differentiate among checked exceptions, unchecked exceptions, and Errors
+
+8
+
+Create a try-catch block and determine how exceptions alter normal program flow
+
+8
+
+Recognize common exception classes (such as NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException, ClassCastException)
+
+8
+
+Manipulate data using the StringBuilder class and its methods
+
+8
+
+Write a simple Lambda expression that consumes a Lambda Predicate expression
+
+8
+
+Create and manipulate calendar data using classes from java.time.LocalDateTime,  java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter, java.time.Period
+
+7
+
+Declare and use an ArrayList of a given type
+
+7
+
+Create if and if/else and ternary constructs
+
+6
+
+Create methods with arguments and return values; including overloaded methods
+
+6
+
+Apply the static keyword to methods and fields 
+
+6
+
+Create and overload constructors; differentiate between default and user defined constructors
+
+6
+
+Determine the effect upon object references and primitive values when they are passed  into methods that change the values
+
+6
+
+Determine when casting is necessary
+
+6
+
+Use super and this to access objects and constructors
+
+6
+
+Describe the advantages of Exception handling
+
+6
+
+Create and invoke a method that throws an exception
+
+6
+
+Develop code that uses wrapper classes such as Boolean, Double, and Integer 
+
+5
+
+Compare loop constructs
+
+5
+
+Apply access modifiers
+
+5
+
+Apply encapsulation principles to a class
+
+5
+
+Describe inheritance and its benefits
+
+5
+
+Create and manipulate Strings
+
+5
+
+Know how to read or write to object fields
+
+4
+
+Declare, instantiate, initialize and use a one-dimensional array
+
+4
+
+Create executable Java applications with a main method; run a Java program from the command line; produce console output
+
+3
+
+Differentiate between object reference variables and primitive variables
+
+3
+
+Explain an Object's Lifecycle (creation, "dereference by reassignment" and garbage collection)
+
+3
+
+Use Java operators; use parentheses to override operator precedence
+
+3
+
+Test equality between Strings and other objects using == and equals ()
+
+3
+
+Use a switch statement
+
+3
+
+Create and use for loops including the enhanced for loop
+
+3
+
+Use break and continue 
+
+3
+
+Import other Java packages to make them accessible in your code
+
+2
+
+Compare and contrast the features and components of Java such as: platform independence, object orientation, encapsulation, etc.
+
+2
+
+Declare and initialize variables (including casting of primitive data types)
+
+2
+
+Create and use do/while loops
+
+2
+
+Define the scope of variables
+
+1
+
+Define the structure of a Java class
+
+1
+
+Create and use while loops
+
