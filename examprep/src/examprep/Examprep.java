@@ -5,6 +5,7 @@
  */
 package examprep;
 
+import org.co.paul.Hello;
 /**
  *
  * @author paulbright
@@ -15,7 +16,9 @@ public class Examprep {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Hello hello = new Hello(); 
+        hello.sayHello();
+        hello.sayHelloTo("paul");
     }
     
 }
