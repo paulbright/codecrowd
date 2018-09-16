@@ -6,6 +6,7 @@ import inherit_test.Butler;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import references.Test;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,16 +20,19 @@ import java.util.List;
 public class TestQuestions {
 
     public static void main(String[] args) {
-        //q1();
+//        q1();
 //        q2();
 //        q3();
-        //q4();
+//        q4();
 //        q5();
 //        q6();
 //        q8();
-        q9();
+//        q9();
+//        
+//        q10();
         
-        q10();
+//        q11();
+            q12();
     }
 
     private static void q1() {
@@ -73,8 +77,7 @@ public class TestQuestions {
         list2.add("C");
 
         list1.addAll(1, list2);
-
-        System.out.println(list1);
+        System.out.println(list1);                
     }
 
     
@@ -119,6 +122,19 @@ public class TestQuestions {
         Butler b = new Butler("paul");
         b.testButler2();
         //b.testButler();
+    }
+    
+    private static void q11(){
+        StringBuilder sb = new StringBuilder("Java");
+         String s1 = sb.toString();
+         String s2 = sb.toString();
+ 
+         System.out.println(s1 == s2);
+         System.out.println(s1.equals(s2));
+    }
+    
+    private static void q12(){
+        references.Test.main(null);                        
     }
 }
 
