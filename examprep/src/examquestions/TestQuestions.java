@@ -1,6 +1,8 @@
 package examquestions;
 
+import inherit_test.A;
 import inherit_test.B;
+import inherit_test.Butler;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +27,8 @@ public class TestQuestions {
 //        q6();
 //        q8();
         q9();
+        
+        q10();
     }
 
     private static void q1() {
@@ -98,6 +102,23 @@ public class TestQuestions {
         boolean flag2 = newYear.isBefore(christmas);
         System.out.println(flag1 + ":" + flag2);
 
+    }
+    
+    /*
+    testing casting and protected access
+    */
+    private static void q10(){
+        A obj1 = new A();
+        B obj2 = (B) obj1;
+        obj2.print();
+//        B obj3 = new B();
+//        obj1 = obj3;
+//        obj1.test();
+        System.out.println(obj1.i1);
+        
+        Butler b = new Butler("paul");
+        b.testButler2();
+        //b.testButler();
     }
 }
 

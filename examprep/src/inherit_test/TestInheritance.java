@@ -22,7 +22,7 @@ public class TestInheritance {
         ti.employeeSkills(bob);
         
         Butler x = new Butler ("bob"); 
-        
+        x.testButler();
         if(x == bob) {
             System.out.println("x==b");
         }
@@ -30,6 +30,7 @@ public class TestInheritance {
         if(x.equals(bob)) {
             System.out.println("x equals b");
         }
+        
     }
     
     public void employeeSkills(Employee emp){

@@ -17,7 +17,9 @@ public class B extends A {
          System.out.println(this.i2); //Line 10
          System.out.println(super.i2); //Line 11
      }
- 
+     public void test(){
+         System.out.println("inside B");
+     }
      public static void main(String [] args) {
          new B().print();
      }

@@ -15,6 +15,14 @@ public class Butler extends Employee implements ICanDrive, ICanCook{
         super(name);
     }
     
+    protected void testButler(){
+        System.out.println("inside testButler protected");
+    }
+    
+    public void testButler2(){
+        System.out.println("inside testButler public");
+    }
+    
     public boolean equals(Object c){
         if(c == this) return true;
         if( ! (c instanceof Butler)) return false;

@@ -12,4 +12,12 @@ package inherit_test;
 public class A {
      public int i1 = 1;
      protected int i2 = 2;
+     
+     public void test(){
+         System.out.println("inside A");
+     }
+     
+     protected void protTest(){
+         System.out.println("inside protTest A");
+     }
 }
