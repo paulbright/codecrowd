@@ -45,8 +45,34 @@ public class TestQuestions {
 //	q20();
 //	q22();
 //	q23();
+//	q26();
+q27();
     }
     
+    public static void q27() {
+         String str = "java";
+	 String str2 = "java";
+         StringBuilder sb = new StringBuilder("java");
+ 
+         System.out.println(str.equals(sb) + ":" + sb.equals(str));
+	 
+	 System.out.println(str.equals(str2) + ":" + str2.equals(str));
+     }
+    public static void q26() {
+         Period period = Period.of(0, 0, 0);
+         System.out.println(period);
+	 period = Period.ofDays(0);
+         System.out.println(period);
+	 period = Period.ofMonths(0);
+         System.out.println(period);
+     }
+    public static void q25() {
+         int grade = 60;
+//         if(grade = 60)
+//             System.out.println("You passed...");
+//         else
+//             System.out.println("You failed...");
+     }
     public static void q23(){
 	references.Test.point_test();
     }

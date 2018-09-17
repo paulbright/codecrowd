@@ -10,19 +10,38 @@ package unary;
  * @author paulbright
  */
 public class UnaryTest {
-     public static void main(String[] args) {
-         int x = 1;
-         while(checkAndIncrement(x)) {
-             System.out.println(x);
-         }
-     }
- 
-     private static boolean checkAndIncrement(int x) {
-         if(x < 5) {
-             x++;
-             return true;
-         } else {
-             return false;
-         }
-     }
+
+    public static void main(String[] args) {
+
+	Test.run();
+    }
+
+    private static void q1() {
+	int x = 1;
+	while (checkAndIncrement(x)) {
+	    System.out.println(x);
+	}
+    }
+
+    private static boolean checkAndIncrement(int x) {
+	if (x < 5) {
+	    x++;
+	    return true;
+	} else {
+	    return false;
+	}
+    }
+}
+
+class Test {
+    char c;
+    double d;
+    float f;
+    public static void run() {
+	Test obj = new Test();
+	System.out.println(">[" + "]");
+	System.out.println(">[" + obj.c +"]");
+	System.out.println(">" + obj.d);
+	System.out.println(">" + obj.f);
+    }
 }
