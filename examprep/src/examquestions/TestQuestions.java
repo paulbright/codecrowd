@@ -4,7 +4,10 @@ import inherit_test.A;
 import inherit_test.B;
 import inherit_test.Butler;
 import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import references.Test;
 
@@ -36,20 +39,81 @@ public class TestQuestions {
 //        q14();
 //	  q15();    
 //	  q16();
+//	  q17();
+//	q18();
+//	q19();
+//	q20();
+//	q22();
+//	q23();
     }
-
-     public static void q16() {
-         List<Integer> list = new ArrayList<>();
-         list.add(100);
-         list.add(200);
-         list.add(100);
-         list.add(200);
-         list.remove(100);
-	 //list.remove(new Integer(100));
-	 //list.remove(new Integer(100));
-	 //list.remove(new Integer(100));
-         System.out.println(list);
+    
+    public static void q23(){
+	references.Test.point_test();
+    }
+    public static void q22() {
+         String [] fruits = {"apple", "banana", "mango", "orange"};
+         for(String fruit : fruits) {
+             System.out.print(fruit + " ");
+             if(fruit.equals("mango")) {
+                 continue;
+             }
+             System.out.println("salad!");
+             break;
+         }        
      }
+    public static void q21() {
+	int y = 1;
+	double d = y;
+         //double [] arr = new int[2]; //Line 3
+         //System.out.println(arr[0]); //Line 4
+     }
+     public static void q20() {
+         LocalDate date = LocalDate.of(2012, 1, 11);
+         Period period = Period.ofMonths(2);
+         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yy");
+         System.out.print(formatter.format(date.minus(period)));
+     }
+     public static void q19() {
+         int a = 100;
+         System.out.println(-a++);
+	 System.out.println(-a);
+     }
+    public static void q18() {
+         short [] args = new short[]{50, 50};
+         args[0] = 5;
+         args[1] = 10;
+         System.out.println("[" + args[0] + ", " + args[1] + "]");
+     }
+    public static void q17() {
+         List<String> dryFruits = new ArrayList<>();
+         dryFruits.add("Walnut");
+         dryFruits.add("Apricot");
+         dryFruits.add("Almond");
+         dryFruits.add("Date");
+ 
+         Iterator<String> iterator = dryFruits.iterator();
+         while(iterator.hasNext()) {
+             String dryFruit = iterator.next();
+             if(dryFruit.startsWith("A")) {
+                 dryFruits.remove(dryFruit);
+		 //iterator.remove();
+             }
+         }
+        
+         System.out.println(dryFruits);
+    }
+    public static void q16() {
+	List<Integer> list = new ArrayList<>();
+	list.add(100);
+	list.add(200);
+	list.add(100);
+	list.add(200);
+	list.remove(100);
+	//list.remove(new Integer(100));
+	//list.remove(new Integer(100));
+	//list.remove(new Integer(100));
+	System.out.println(list);
+    }
     private static void q15(){
 	 int [] arr = {2, 1, 0};
          for(int i : arr) {
