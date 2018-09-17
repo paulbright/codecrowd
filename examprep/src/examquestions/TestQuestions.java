@@ -48,9 +48,74 @@ public class TestQuestions {
 //	q23();
 //	q26();
 //	q27();
-q28();
+//	q28();
+//	q29();
+//	q30();
+//	q31();
+//	q32();
     }
     
+     public static void q33(){
+	    //List<String> list = new /*INSERT*/(); 
+	    List<String> list = new ArrayList<>();
+	    List<String> list1 = new ArrayList<String>();
+	    
+	    //List<String> list3 = new List<String>();
+	    
+	    
+     }
+    
+     public static void q32() {
+         String fruit = "mango";
+         switch (fruit) {
+             default:
+                 System.out.println("ANY FRUIT WILL DO");
+             case "Apple":
+                 System.out.println("APPLE");
+             case "Mango":
+                 System.out.println("MANGO");
+             case "Banana":
+                 System.out.println("BANANA");
+                 break;
+         }
+     }
+     public static void q31() {
+         List<Character> list = new ArrayList<>();
+         list.add(0, 'V');
+         list.add('T');
+         list.add(1, 'E');
+         list.add(3, 'O');
+	
+	 System.out.println(list);
+	 
+	 System.out.println("");
+         if(list.contains('O')) {
+             list.remove('O');
+	     //list.remove(new Character('O'));
+         }
+ 
+         for(char ch : list) {
+             System.out.print(ch);
+         }
+	 
+	 System.out.println("");
+     }
+    public static void q30() {
+         //System.out.println("Output is: " + 10 != 5);
+	 
+	 System.out.println("Output is: " + (10 != 5));
+	 System.out.println(10 != 5 ? "A" :"B"  + "hello");
+	 
+	 System.out.println( (10 != 5 ? "A" :"B")  + "hello");
+	 System.out.println("wow" + (10 != 5 ? "A" :"B"));
+     }
+     public static void q29() {
+         do {
+             System.out.println(100);
+         } while (false);
+         System.out.println("Bye");
+     }
+     
     public static void q28() {
          LocalTime time = LocalTime.of(12, 40);
          //String amPm = time.getHour() >= 12 ? (time.getHour() == 12) ? "PM" : "AM";
