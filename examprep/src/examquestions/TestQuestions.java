@@ -33,9 +33,29 @@ public class TestQuestions {
 
 //        q11();
 //        q12();
-          q14();
+//        q14();
+//	  q15();    
+//	  q16();
     }
 
+     public static void q16() {
+         List<Integer> list = new ArrayList<>();
+         list.add(100);
+         list.add(200);
+         list.add(100);
+         list.add(200);
+         list.remove(100);
+	 //list.remove(new Integer(100));
+	 //list.remove(new Integer(100));
+	 //list.remove(new Integer(100));
+         System.out.println(list);
+     }
+    private static void q15(){
+	 int [] arr = {2, 1, 0};
+         for(int i : arr) {
+             System.out.println(arr[i]);
+         }
+    }
     private static void q1() {
         double[] ar = new double[2];
         System.out.println(ar[0] + ar[1]);
