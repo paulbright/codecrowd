@@ -4,6 +4,7 @@ import inherit_test.A;
 import inherit_test.B;
 import inherit_test.Butler;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -46,8 +47,17 @@ public class TestQuestions {
 //	q22();
 //	q23();
 //	q26();
-q27();
+//	q27();
+q28();
     }
+    
+    public static void q28() {
+         LocalTime time = LocalTime.of(12, 40);
+         //String amPm = time.getHour() >= 12 ? (time.getHour() == 12) ? "PM" : "AM";
+	 String amPm = time.getHour() > 12? "PM" : time.getHour() == 12 ? "Noon" : "AM";
+	 
+         System.out.println(amPm);
+     }
     
     public static void q27() {
          String str = "java";
