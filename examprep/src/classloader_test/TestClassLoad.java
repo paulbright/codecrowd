@@ -22,7 +22,7 @@ public class TestClassLoad {
         TestClassLoad tc = new TestClassLoad();
         tc.printClassLoaders();
         LoadClass lc = new LoadClass();
-        Class c = lc.loadClass("file:///Users/paulbright/develop/code_crowd/class3/package/", "org.co.paul.Hello");
+        Class c = lc.loadClass("file:///develop/codecrowd/class3/package/", "org.co.paul.Hello");
         Constructor con = c.getConstructor();
         Object obj = con.newInstance();
         Method method = c.getMethod("sayHello");

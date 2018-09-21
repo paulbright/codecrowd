@@ -12,11 +12,12 @@ package constructor;
 class Student {
      String name;
      int age;
- 
+     //careful 
      void Student() {
          Student("James", 25);
      }
- 
+     
+     //watchout
      void Student(String name, int age) {
          this.name = name;
          this.age = age;

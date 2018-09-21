@@ -1,6 +1,6 @@
 package examquestions;
 
-import inherit_test.A;
+import inherit_test.newpackage.A;
 import inherit_test.B;
 import inherit_test.Butler;
 import java.time.LocalDate;
@@ -24,6 +24,7 @@ import references.Test;
 public class TestQuestions {
 
     public static void main(String[] args) {
+//	xyz();
 //        q1();
 //        q2();
 //        q3();
@@ -54,7 +55,15 @@ public class TestQuestions {
 //	q31();
 //	q32();
     }
+   
     
+    public static void xyz() {
+        LocalDate newYear = LocalDate.of(2018, 1, 1);
+        LocalDate christmas = LocalDate.of(2018, 12, 25);
+        boolean flag1 = newYear.isAfter(christmas);
+        boolean flag2 = newYear.isBefore(christmas);
+        System.out.println(flag1 + ":" + flag2);
+    }
      public static void q33(){
 	    //List<String> list = new /*INSERT*/(); 
 	    List<String> list = new ArrayList<>();
@@ -119,9 +128,9 @@ public class TestQuestions {
     public static void q28() {
          LocalTime time = LocalTime.of(12, 40);
          //String amPm = time.getHour() >= 12 ? (time.getHour() == 12) ? "PM" : "AM";
-	 String amPm = time.getHour() > 12? "PM" : time.getHour() == 12 ? "Noon" : "AM";
-	 
-         System.out.println(amPm);
+	 String amPm = time.getHour() > 12 ? "PM" : time.getHour() == 12 ? "Noon" : "AM";
+	 String xyz = time.getHour() > 12 ? "PM" : "AM";
+         System.out.println(xyz);
      }
     
     public static void q27() {
@@ -216,7 +225,10 @@ public class TestQuestions {
 	System.out.println(list);
     }
     private static void q15(){
-	 int [] arr = {2, 1, 0};
+	 int [] arr = {2, 3, 0};
+	 
+	 System.out.println(arr.length);
+
          for(int i : arr) {
              System.out.println(arr[i]);
          }

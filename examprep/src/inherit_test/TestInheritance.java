@@ -12,10 +12,14 @@ package inherit_test;
 public class TestInheritance {
     public static void main(String[] args) {
         WildCat african_wild_cat = new WildCat();
+	Cat cat  = new Cat();
+	Dog dog = new Dog(); 
+
         TestInheritance ti = new TestInheritance();
         ti.cry(african_wild_cat);
-        
-        
+        ti.cry(cat);
+	ti.cry(dog);
+        /*
         Butler bob = new Butler("Bob");
         Secretary sec = new Secretary("Rachel");
         ti.employeeSkills(sec);
@@ -30,7 +34,7 @@ public class TestInheritance {
         if(x.equals(bob)) {
             System.out.println("x equals b");
         }
-        
+        */
     }
     
     public void employeeSkills(Employee emp){

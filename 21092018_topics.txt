@@ -1,0 +1,5 @@
+static keyword
+final 
+interface, abstract class, abstract functions 
+
+program argument passing. 

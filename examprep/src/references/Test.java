@@ -30,7 +30,7 @@ public class Test {
          change(obj);
          obj.print();
 	 
-	 point_test();
+	 //point_test();
      }
      
      public static void point_test() {
