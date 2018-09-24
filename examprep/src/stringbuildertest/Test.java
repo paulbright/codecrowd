@@ -9,6 +9,10 @@ package stringbuildertest;
  *
  * @author paulbright
  */
+
+/*
+StringBuilder inherits equals() from java.lang.Object, and as such StringBuilder.equals() returns true only when passed the same object as an argument. It does not compare the contents of two StringBuilders!
+*/
 public class Test {
     
     public static void main(String[] args) {
