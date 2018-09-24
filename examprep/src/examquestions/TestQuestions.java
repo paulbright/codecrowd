@@ -3,6 +3,7 @@ package examquestions;
 import inherit_test.newpackage.A;
 import inherit_test.B;
 import inherit_test.Butler;
+import java.io.File;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Period;
@@ -54,8 +55,13 @@ public class TestQuestions {
 //	q30();
 //	q31();
 //	q32();
+q34();
     }
    
+    public static void q34() {
+        File dir = new File("F:" + File.separator + "A" + File.separator + "B");
+        System.out.println(dir.getParentFile().getParent());
+    }
     
     public static void xyz() {
         LocalDate newYear = LocalDate.of(2018, 1, 1);
