@@ -121,8 +121,9 @@ public class TestQuestions {
      public static void q29() {
          do {
              System.out.println(100);
-         } while (false);
-         System.out.println("Bye");
+	    
+         } while (true);
+        // System.out.println("Bye");
      }
      
     public static void q28() {
@@ -179,7 +180,7 @@ public class TestQuestions {
      }
      public static void q20() {
          LocalDate date = LocalDate.of(2012, 1, 11);
-         Period period = Period.ofMonths(2);
+         Period period = Period.ofMonths(5);
          DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yy");
          System.out.print(formatter.format(date.minus(period)));
      }

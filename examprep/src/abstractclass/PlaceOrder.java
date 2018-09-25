@@ -11,7 +11,7 @@ package abstractclass;
  */
 public class PlaceOrder {
     public static void main(String[] args) {
-	OnlineOrder onlineOrder = new OnlineOrder( 2000);
+	OnlineOrder onlineOrder = new OnlineOrder("big discount coupon", 2000);
 	//WarehouseOrder wOrder = new WarehouseOrder();
 //	onlineOrder.validate();
 //	onlineOrder.process();
