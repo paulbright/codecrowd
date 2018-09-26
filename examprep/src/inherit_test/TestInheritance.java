@@ -11,14 +11,27 @@ package inherit_test;
  */
 public class TestInheritance {
     public static void main(String[] args) {
-        WildCat african_wild_cat = new WildCat();
-	Cat cat  = new Cat();
-	Dog dog = new Dog(); 
+	
+	//Animal a = new Animal(); 
+	//Dog x = (Dog) a; 
+	
+	//x.cry();
+	
+	//Dog d = new Dog(); 
 
-        TestInheritance ti = new TestInheritance();
-        ti.cry(african_wild_cat);
-        ti.cry(cat);
-	ti.cry(dog);
+	//a.cry(); 
+	
+//	TestInheritance ti = new TestInheritance();
+//	ti.cry(d);
+//	ti.cry(c);
+        //WildCat african_wild_cat = new WildCat();
+//	Cat cat  = new Cat();
+//	Dog dog = new Dog(); 
+//
+//        TestInheritance ti = new TestInheritance();
+//        ti.cry(african_wild_cat);
+//        ti.cry(cat);
+//	ti.cry(dog);
         /*
         Butler bob = new Butler("Bob");
         Secretary sec = new Secretary("Rachel");

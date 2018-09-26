@@ -4,6 +4,7 @@ import inherit_test.newpackage.A;
 import inherit_test.B;
 import inherit_test.Butler;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Period;
@@ -22,9 +23,23 @@ import references.Test;
  *
  * @author paulbright
  */
+class SpecialString {
+     String str;
+     SpecialString(String str) {
+         this.str = str;
+     }
+     public String toString(){
+	 return str.toUpperCase();
+     }
+}
+class myclass{
+//    public String toString(){
+//	return ("wow");
+//    }
+}
 public class TestQuestions {
-
-    public static void main(String[] args) {
+  
+    static public  void main(String[] args) {
 //	xyz();
 //        q1();
 //        q2();
@@ -54,10 +69,21 @@ public class TestQuestions {
 //	q29();
 //	q30();
 //	q31();
-//	q32();
-q34();
+	q32();
+//q34();
+//q35(); 
+	
     }
    
+     public static void q35() {
+        // short [] arr = new short[] {100,100}; 
+	 short [] arr = {1,2};
+	 
+         arr[0] = 5;
+         arr[1] = 10;
+         System.out.println("[" + arr[0] + ", " + arr[1] + "]");
+     }
+     
     public static void q34() {
         File dir = new File("F:" + File.separator + "A" + File.separator + "B");
         System.out.println(dir.getParentFile().getParent());

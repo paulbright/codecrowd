@@ -36,9 +36,11 @@ public class UnaryTest {
 class Test {
     char c;
     double d;
-    float f;
+    float f = 0.1f;
+    int x = (int)c;
     public static void run() {
 	Test obj = new Test();
+	System.out.println(obj.x );
 	System.out.println(">[" + "]");
 	System.out.println(">[" + obj.c +"]");
 	System.out.println(">" + obj.d);

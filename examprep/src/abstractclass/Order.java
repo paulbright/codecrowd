@@ -23,6 +23,9 @@ Java does not support multiple inheritance so we are only allowed to extend one 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Random;
+/*
+    Gang of Four Design Patterns 
+*/
 
 public abstract class Order {
 
@@ -32,6 +35,7 @@ public abstract class Order {
 
   public abstract void validate();
   public abstract void process();
+  
 
   public Order(){
       this.id = new Random().nextLong();

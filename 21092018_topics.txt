@@ -1,5 +1,26 @@
 static keyword
+program argument passing. 
 final 
 interface, abstract class, abstract functions 
 
-program argument passing. 
+
+Rules to Remember
+Abstract classes cannot be instantiated.
+
+If a class has at least one abstract method, then the class must be declared abstract.
+
+To use an abstract class, we must create a class that extends the abstract class (inheritance) and provide implementations for all abstract methods.
+
+Java does not support multiple inheritance so we are only allowed to extend one class (abstract or not).    There is where interfaces become useful.
+*/
+
+WarehouseOrder 
+1. Constructor for custom Warehouseid in WarehouseOrder class
+2. Add printDetails function to WarehouseOrder class and it must display Warehouseid, order id, date and amount 
+
+StoreOrder 
+1. Constructor for custom storeid in StoreOrder class
+2. Add printDetails function to StoreOrder class and it must display storeid, order id, date and amount 
+3. Create member variable storeName; 
+4. Create/Modify constructor to accept storeName as well. 
+

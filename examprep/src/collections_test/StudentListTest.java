@@ -21,6 +21,10 @@ class Student {
          this.name = name;
          this.age = age;
      }
+     
+     public void setAge(int age){
+	 this.age = age; 
+     }
      /*
      public boolean equals(Object obj){
 	 return true;

@@ -16,23 +16,29 @@ StringBuilder inherits equals() from java.lang.Object, and as such StringBuilder
 public class Test {
     
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder("java!");
-        StringBuilder sb2 = new StringBuilder("java!");
-        StringBuilder sb3 = sb;
-                
-        String s = new String ("java!");
-        
-        System.out.println(s.equals(sb));
-        System.out.println(s.equals(sb.toString()));
-        //System.out.println(s.equalsIgnoreCase(sb));
-        System.out.println(s.equalsIgnoreCase(sb.toString()));
-        
-        
-        System.out.println(sb.equals(s));
-        System.out.println(sb.equals(s.toString()));
-        
-        System.out.println(sb.equals(sb3));
-        
+//        StringBuilder sb = new StringBuilder("java!");
+//        StringBuilder sb2 = new StringBuilder("java!");
+//        StringBuilder sb3 = sb;
+//                
+//        String s = new String ("java!");
+//        
+//        System.out.println(s.equals(sb));
+//        System.out.println(s.equals(sb.toString()));
+//        //System.out.println(s.equalsIgnoreCase(sb));
+//        System.out.println(s.equalsIgnoreCase(sb.toString()));
+//        
+//        
+        //System.out.println(sb.equals(s));
+//        System.out.println(sb.equals(s.toString()));
+//        
+        //System.out.println(sb.equals(sb3));
+//	String a = sb.toString();
+//	String b = sb2.toString();
+//	System.out.println(a.equals(b));
+        String str = "java";
+        StringBuilder sb = new StringBuilder("java");
+ 
+         System.out.println(str.equals(sb.toString()) + ":" + sb.equals(str));
     }
     
 }

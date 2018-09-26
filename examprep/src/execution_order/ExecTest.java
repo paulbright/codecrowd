@@ -20,7 +20,7 @@ public class ExecTest {
     
     {
         System.out.println("inside ExecTest init block2");
-        x = 9;
+        x = 10;
     }
     private int x = 8;
     

@@ -9,6 +9,10 @@ package abstractclass;
  *
  * @author A142400
  */
+/* 
+    is a - relationship -> tightly coupled 
+    has a - relationship -
+*/
 public class OnlineOrder extends Order {
   private String couponCode;
 
