@@ -1,0 +1,31 @@
+IInvoice  - methods - process, display 
+
+abstract class Invoice - must implement IInvoice  
+	instance variables - invoice id, invoice title, date, amount
+	intance method - implement display function
+	instance method - create get and set functions for id, title, date and amount
+ 	method 	setAmount must throw a checked Exception 
+            if amount passed is less than 1 or greater than 100000
+            
+InsuranceInvoice - extend Invoice 
+		instance variables  - Insurance company name
+		instance methods, getCompanyName. setCompanyName
+		Constructor (invoice id, invoice title, amount, company name) 
+			must pass amount, invoice id, title to parent class
+		implement display function 
+			display insurance company name, invoice id, title, amount
+			hint (use super.dsiplay as well) 
+
+		override toString() - return a string which contain all the invoice data
+        override equals() - must return true if two invoices have same amount else false
+
+InvoiceHandler - implement entry function main
+            create three InsuranceInvoices a,b,c  
+            with amounts 0, 1000, 1000.
+            equate a to c and b to c using equals function. 
+            use println to print a, b, and c 
+            use display function from each object.
+            use setAmount on each object and pass values 
+            -100, 100001, 2000. catch exceptions if any. 
+             
+
