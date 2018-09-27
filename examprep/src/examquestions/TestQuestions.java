@@ -40,41 +40,20 @@ class myclass{
 public class TestQuestions {
   
     static public  void main(String[] args) {
-//	xyz();
-//        q1();
-//        q2();
-//        q3();
-//        q4();
-//        q5();
-//        q6();
-//        q8();
-//        q9();
-//        
-//        q10();
-
-//        q11();
-//        q12();
-//        q14();
-//	  q15();    
-//	  q16();
-//	  q17();
-//	q18();
-//	q19();
-//	q20();
-//	q22();
-//	q23();
-//	q26();
-//	q27();
-//	q28();
-//	q29();
-//	q30();
-//	q31();
-	q32();
-//q34();
-//q35(); 
-	
+       
     }
    
+    public static void q36() 
+    {   
+        //int [] x = {20,40};
+        //int  [] x = new int [2];
+        //int [] x = new int [] {44,55};
+        int [] x; x = new int [2];
+        x[0]=10;
+        x[1]=20;
+        System.out.println(x[0]+":"+x[1]); 
+    }
+     
      public static void q35() {
         // short [] arr = new short[] {100,100}; 
 	 short [] arr = {1,2};
