@@ -7,7 +7,7 @@ git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
 change the following:
 proxyuser = your personnel number
 proxypwd = your windows password
-proxy.server.com = websenseproxy.standardbank.co.za
+proxy.server.com = w...za
 
 
 •	change 8080 to the proxy port configured on your proxy server
