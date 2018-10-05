@@ -14,6 +14,7 @@ public class StoreOrder extends Order {
   private long storeId;
   private Employee storeRep;
 	
+  
   @Override
   public void validate() {
     // TODO Auto-generated method stub

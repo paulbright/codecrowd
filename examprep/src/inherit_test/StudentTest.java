@@ -17,16 +17,30 @@ class Student {
          this.name = name;
          this.marks = marks;
      }
+     
+     public String toString(){
+	 return this.name + ":" + this.marks;
+     }
 }
  
 public class StudentTest {
      public static void main(String[] args) {
          Student student = new Student("James", 25);
          int marks = 25;
+	 StringBuilder sb = new StringBuilder("hello");
          review(student, marks);
-         System.out.println(marks + "-" + student.marks);
+         //System.out.println(marks + "-" + student.marks);
+	 //System.out.println(sb);
+	 
+	 test();
      }
+     
+     public static void test() {
+         String str = "java";
+         StringBuilder sb = new StringBuilder("java");
  
+         System.out.println(str.equals(sb));
+     }
      private static void review(Student stud, int marks) {
          marks = marks + 10;
          stud.marks+=marks;

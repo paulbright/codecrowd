@@ -4,6 +4,7 @@ import inherit_test.newpackage.A;
 import inherit_test.B;
 import inherit_test.Butler;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Period;
@@ -22,42 +23,46 @@ import references.Test;
  *
  * @author paulbright
  */
+class SpecialString {
+     String str;
+     SpecialString(String str) {
+         this.str = str;
+     }
+     public String toString(){
+	 return str.toUpperCase();
+     }
+}
+class myclass{
+//    public String toString(){
+//	return ("wow");
+//    }
+}
 public class TestQuestions {
-
-    public static void main(String[] args) {
-//	xyz();
-//        q1();
-//        q2();
-//        q3();
-//        q4();
-//        q5();
-//        q6();
-//        q8();
-//        q9();
-//        
-//        q10();
-
-//        q11();
-//        q12();
-//        q14();
-//	  q15();    
-//	  q16();
-//	  q17();
-//	q18();
-//	q19();
-//	q20();
-//	q22();
-//	q23();
-//	q26();
-//	q27();
-//	q28();
-//	q29();
-//	q30();
-//	q31();
-//	q32();
-q34();
+  
+    static public  void main(String[] args) {
+       
     }
    
+    public static void q36() 
+    {   
+        //int [] x = {20,40};
+        //int  [] x = new int [2];
+        //int [] x = new int [] {44,55};
+        int [] x; x = new int [2];
+        x[0]=10;
+        x[1]=20;
+        System.out.println(x[0]+":"+x[1]); 
+    }
+     
+     public static void q35() {
+        // short [] arr = new short[] {100,100}; 
+	 short [] arr = {1,2};
+	 
+         arr[0] = 5;
+         arr[1] = 10;
+         System.out.println("[" + arr[0] + ", " + arr[1] + "]");
+     }
+     
     public static void q34() {
         File dir = new File("F:" + File.separator + "A" + File.separator + "B");
         System.out.println(dir.getParentFile().getParent());
@@ -127,8 +132,9 @@ q34();
      public static void q29() {
          do {
              System.out.println(100);
-         } while (false);
-         System.out.println("Bye");
+	    
+         } while (true);
+        // System.out.println("Bye");
      }
      
     public static void q28() {
@@ -185,7 +191,7 @@ q34();
      }
      public static void q20() {
          LocalDate date = LocalDate.of(2012, 1, 11);
-         Period period = Period.ofMonths(2);
+         Period period = Period.ofMonths(5);
          DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yy");
          System.out.print(formatter.format(date.minus(period)));
      }

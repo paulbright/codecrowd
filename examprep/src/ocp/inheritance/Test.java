@@ -9,9 +9,13 @@ package ocp.inheritance;
  *
  * @author paulbright
  */
-class Animal {}
+class Animal {
+int a;
+}
  
-class Dog extends Animal {}
+class Dog extends Animal {
+    int a;
+}
  
 class Cat extends Animal {}
  

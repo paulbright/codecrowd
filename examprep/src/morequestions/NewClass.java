@@ -21,6 +21,17 @@ public class NewClass {
         
         arr = new Integer[1];
         System.out.println(arr[0]);
+        switch('c'){
+            
+        }
+        
+        
+        try{
+            
+        }
+        finally{
+            
+        }
         
         String s = "3434";
         

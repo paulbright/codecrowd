@@ -9,13 +9,16 @@ package abstractclass;
  *
  * @author A142400
  */
+/* 
+    is a - relationship -> tightly coupled 
+    has a - relationship -
+*/
 public class OnlineOrder extends Order {
-
   private String couponCode;
 
-  public OnlineOrder(String coupon, long amount){
+  public OnlineOrder(String couponCode, long amount){
       this(amount);
-      couponCode = coupon; 
+      this.couponCode = couponCode; 
       System.out.println("inside default Online Order constructor");
   }
   public OnlineOrder(long amount){ 
@@ -31,9 +34,11 @@ public class OnlineOrder extends Order {
     @Override
     public void validate() {
     }
+    
     public void printDetails() {
       System.out.println("coupon:" + this.couponCode );
       super.printDetails();
   }
+
     
 }
