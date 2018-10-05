@@ -1,0 +1,317 @@
+
+1. What will be the output when the following program is run?
+
+package exceptions;
+public class TestClass{
+    public static void main(String[] args) {
+        try{
+            hello();
+        }
+        catch(MyException me){
+            System.out.println(me);
+        }
+    }
+    
+    static void hello() throws MyException{
+        int[] dear = new int[7];
+        dear[0] = 747;
+        foo();
+    }
+    
+    static void foo() throws MyException{
+        throw new MyException("Exception from foo");
+    }
+}
+
+class MyException extends Exception {
+    public MyException(String msg){
+        super(msg);
+    }
+}
+(Assume that line numbers printed in the messages given below are correct.)
+
+
+
+2. Which of the lines will cause a compile time error in the following program?
+
+public class MyClass{
+   public static void main(String args[]){
+      char c;
+      int i;
+      c = 'a';//1
+      i = c;  //2
+      i++;    //3
+      c = i;  //4
+      c++;    //5
+   }
+}
+
+3. What will the following program print?
+
+public class InitTest{
+   public InitTest(){
+      s1 = sM1("1");
+   }
+   static String s1 = sM1("a");
+   String s3 = sM1("2");{
+      s1 = sM1("3");
+   }
+   static{
+      s1 = sM1("b");
+   }
+   static String s2 = sM1("c");
+   String s4 = sM1("4");
+    public static void main(String args[]){
+        InitTest it = new InitTest();
+    }
+    private static String sM1(String s){
+       System.out.println(s);  return s;
+    }
+}
+
+4 Consider the following code for the main() method:
+
+public static void main(String[] args) throws Exception{
+   int i = 1, j = 10;
+   do {
+      if (i++ > --j) continue;
+   } while (i < 5);
+   System.out.println("i=" + i + " j=" + j);
+}
+What will be the output when the above code is executed?
+
+
+5. What will the following code print when run?
+public class TestClass {
+    public void switchString(String input){
+        switch(input){
+            case "a" : System.out.println( "apple" );
+            case "b" : System.out.println( "bat" );
+                break;
+            case "B" : System.out.println( "big bat" );                
+            default : System.out.println( "none" );
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        TestClass tc = new TestClass();
+        tc.switchString("B");
+    }
+}
+
+
+
+6. What will be the contents of s1 and s2 at the time of the println statement in the main method of the following program?
+
+import java.util.*;
+public class TestClass{
+   public static void main(String args[]){
+      Stack s1 = new Stack ();
+      Stack s2 = new Stack ();
+      processStacks (s1,s2);
+      System.out.println (s1 + "    "+ s2);
+   }
+   public static void processStacks(Stack x1, Stack x2){
+      x1.push (new Integer ("100")); //assume that the method push adds the passed object to the stack.
+      x2 = x1;
+   }
+ }
+Note:[] is used in the options below to denote each element of the Stack.
+
+7.
+package strings;
+
+public class StringFromChar {
+
+    public static void main(String[] args) {
+        String myStr = "good";
+        char[] myCharArr = {'g', 'o', 'o', 'd'};
+        String newStr = null;
+        for (char ch : myCharArr) {
+            newStr = newStr + ch;
+        }
+        System.out.println((newStr == myStr) + " " + (newStr.equals(myStr)));
+    }
+} 
+
+
+What will it print when compiled and run?
+
+8
+
+What will be the output when the following program is run?
+
+public class TestClass{
+   public static void main(String args[]){
+      int i;
+      int j;
+      for (i = 0, j = 0; j < i; ++j, i++){
+         System.out.println(i + " " + j);
+      }
+      System.out.println(i + " " + j);
+   }
+}
+
+
+9
+
+
+Consider following classes:
+
+//In File Other.java
+package other;
+public class Other { public static String hello = "Hello"; }
+
+//In File Test.java
+package testPackage;
+import other.*;
+class Test{
+   public static void main(String[] args){
+      String hello = "Hello", lo = "lo";
+      System.out.print((testPackage.Other.hello == hello) + " ");    //line 1
+      System.out.print((other.Other.hello == hello) + " ");   //line 2
+      System.out.print((hello == ("Hel"+"lo")) + " ");           //line 3
+      System.out.print((hello == ("Hel"+lo)) + " ");              //line 4
+      System.out.println(hello == ("Hel"+lo).intern());          //line 5
+   }
+}
+class Other { static String hello = "Hello"; }
+What will be the output of running class Test?
+
+10
+
+What will the following code print when compiled and run?  
+public class OrderTest {
+
+    public void initData(String[] arr) {
+        int ind = 0;
+        for (String str : arr) {
+            str.concat(str + " " + ind);
+            ind++;
+        }
+    }
+
+    public void printData(String[] arr) {
+        for (String str : arr) {
+            System.out.println(str);
+        }
+    }
+
+    public static void main(String[] args) {
+        OrderTest ot = new OrderTest();
+        String[] arr = new String[2];
+        ot.initData(arr);
+        ot.printData(arr);
+    }
+}
+
+
+11
+
+What will the following code print?  
+public class Test {
+
+    public static void testInts(Integer obj, int var) {
+        obj = var++;
+        obj++;
+    }
+
+    public static void main(String[] args) {
+        Integer val1 = new Integer(5);
+        int val2 = 9;
+        testInts(val1++, ++val2);
+        System.out.println(val1 + " " + val2);
+    }
+}
+
+
+12
+Consider the following interface definition
+
+interface Bozo {
+
+    int type = 0;
+
+    public void jump();
+}
+Now consider the following class
+
+public class Type1Bozo implements Bozo {
+
+    public Type1Bozo() {
+        type = 1;
+    }
+
+    public void jump() {
+        System.out.println("jumping..." + type);
+    }
+
+    public static void main(String[] args) {
+        Bozo b = new Type1Bozo();
+        b.jump();
+    }
+}
+What will the program print when compiled and run?
+
+13
+
+Consider the contents of following two files:  
+//In file A.java 
+package a; 
+public class A {
+
+    A() {
+    }
+
+    public void print() {
+        System.out.println("A");
+    }
+}
+//In file B.java 
+package b; 
+
+import a.*; 
+public class B extends A {
+
+    B() {
+    }
+
+    public void print() {
+        System.out.println("B");
+    }
+
+    public static void main(String[] args) {
+        new B();
+    }
+}
+What will be printed when you try to compile and run class B?
+
+14 
+
+
+What will the following code print?      
+String abc = "";     
+abc.concat("abc");     
+abc.concat("def");     
+System.out.print(abc); 
+
+15
+
+
+What will the following code print when compiled and run?
+class ABCD{
+   int x = 10;
+   static int y = 20;
+}
+class MNOP extends ABCD{
+   int x = 30;
+   static int y = 40;
+}
+
+public class TestClass {
+   public static void main(String[] args) {
+     System.out.println(new MNOP().x+", "+new MNOP().y);
+   }
+}
+
+16 
